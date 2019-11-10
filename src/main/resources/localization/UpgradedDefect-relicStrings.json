@@ -1,0 +1,14 @@
+{
+  "Stalactite": {
+    "NAME": "Stalactite",
+    "FLAVOR": "This dagger never seems to drop a tear.",
+    "DESCRIPTIONS": ["Every time you play #b",
+      " #yAttacks in a single turn Channel #b1 #yFrost"
+    ]
+  },
+  "Kaleidoscope": {
+    "NAME": "Kaleidoscope",
+    "FLAVOR": "A very bizarre tool that reminds you of your childhood.",
+    "DESCRIPTIONS": ["Every #b10th #ySkill you play, gain #b1 #yFocus"]
+  }
+}

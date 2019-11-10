@@ -1,0 +1,5 @@
+/target/
+/toto.txt
+/lib/
+/.idea/
+*.pdn

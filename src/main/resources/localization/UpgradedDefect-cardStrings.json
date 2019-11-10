@@ -1,0 +1,42 @@
+{
+  "UpgradedDefect:IceBeam": {
+    "NAME": "Ice Beam",
+    "DESCRIPTION": "Deal !D! damage. NL Channel !M! Frost."
+  },
+  "UpgradedDefect:ShockingTouch": {
+    "NAME": "Shocking Touch",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Trigger the passive ability of all Lightning orbs."
+  },
+  "UpgradedDefect:Shelter": {
+    "NAME": "Shelter",
+    "DESCRIPTION": "Gain 1 Orb slot. NL Channel !M! Frost. NL Exhaust."
+  },
+  "UpgradedDefect:Parasite": {
+    "NAME": "Parasite",
+    "DESCRIPTION": "Apply !M! Parasite. NL Exhaust."
+  },
+  "UpgradedDefect:Accelerate": {
+    "NAME": "Accelerate",
+    "DESCRIPTION": "Draw !M! cards. NL Lose 1 Focus. NL Exhaust."
+  },
+  "UpgradedDefect:Flux": {
+    "NAME": "Flux",
+    "DESCRIPTION": "Draw a card. NL Gain !M! Block for every Lightning orb you have."
+  },
+  "UpgradedDefect:IcePalm": {
+    "NAME": "Ice Palm",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, Channel !M! Frost."
+  },
+  "UpgradedDefect:Infuse": {
+    "NAME": "Infuse",
+    "DESCRIPTION": "Gain !M! Strenght. NL Lose 1 Focus. NL Lose 1 Orb slot. NL Exhaust."
+  },
+  "UpgradedDefect:RoboticWalls": {
+    "NAME": "Robotic Walls",
+    "DESCRIPTION": "Every time you channel 1 Frost, gain !M! Plated Armor."
+  },
+  "UpgradedDefect:Hack": {
+    "NAME": "Hack",
+    "DESCRIPTION": "Draw !M! cards. NL You draw 2 cards "
+  }
+}
