@@ -49,7 +49,13 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new Clawbound());
         BaseMod.addCard(new CustomStack());
         BaseMod.addCard(new CustomBattery());
+        BaseMod.addCard(new CustomBeamCell());
+        BaseMod.addCard(new CustomGlacier());
+        BaseMod.addCard(new LightningAura());
 
+        UnlockTracker.unlockCard(LightningAura.ID);
+        UnlockTracker.unlockCard(CustomGlacier.ID);
+        UnlockTracker.unlockCard(CustomBeamCell.ID);
         UnlockTracker.unlockCard(CustomBattery.ID);
         UnlockTracker.unlockCard(CustomStack.ID);
         UnlockTracker.unlockCard(ClawSnap.ID);
@@ -67,11 +73,14 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(IceBeam.ID);
 
 
+        BaseMod.removeCard("Blizzard", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Glacier", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Beam Cell", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Conserve Battery", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Stack", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Rebound", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Cold Snap", AbstractCard.CardColor.BLUE);
-        BaseMod.removeCard("Claw", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Gash", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Barrage", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Overclock", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Self Repair", AbstractCard.CardColor.BLUE);

@@ -45,7 +45,7 @@
   },
   "UpgradedDefect:CustomClaw": {
     "NAME": "Claw",
-    "DESCRIPTION": "Deal !D! damage. NL Claw."
+    "DESCRIPTION": "Deal !D! damage twice. NL Claw."
   },
   "UpgradedDefect:ClawSnap": {
     "NAME": "Claw Snap",
@@ -63,5 +63,17 @@
   "UpgradedDefect:CustomBattery": {
     "NAME": "Charge Battery",
     "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning."
+  },
+  "UpgradedDefect:CustomBeamCell": {
+    "NAME": "Beam Cell",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Lock-On."
+  },
+  "UpgradedDefect:LightningAura": {
+    "NAME": "Lightning Aura",
+    "DESCRIPTION": "Channel !M! Lightning. NL Gain 3 Block for every Lightning orb you have."
+  },
+  "UpgradedDefect:CustomGlacier": {
+    "NAME": "Glacier",
+    "DESCRIPTION": "Gain !B! Block. NL Channel 1 Frost."
   }
 }
