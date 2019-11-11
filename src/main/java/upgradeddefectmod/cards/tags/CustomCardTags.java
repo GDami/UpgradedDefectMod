@@ -1,4 +1,4 @@
-package upgradeddefectmod.tags;
+package upgradeddefectmod.cards.tags;
 
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.cards.AbstractCard;

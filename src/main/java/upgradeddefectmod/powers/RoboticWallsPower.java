@@ -39,7 +39,7 @@ public class RoboticWallsPower extends AbstractPower {
     @Override
     public void onChannel(AbstractOrb o) {
         if (o instanceof Frost) {
-            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new PlatedArmorPower(AbstractDungeon.player, 1), 1));
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new PlatedArmorPower(AbstractDungeon.player, this.amount), this.amount));
         }
     }
 }

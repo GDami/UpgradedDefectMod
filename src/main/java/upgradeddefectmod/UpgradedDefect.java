@@ -46,7 +46,12 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new FrostBarrage());
         BaseMod.addCard(new CustomClaw());
         BaseMod.addCard(new ClawSnap());
+        BaseMod.addCard(new Clawbound());
+        BaseMod.addCard(new CustomStack());
+        BaseMod.addCard(new CustomBattery());
 
+        UnlockTracker.unlockCard(CustomBattery.ID);
+        UnlockTracker.unlockCard(CustomStack.ID);
         UnlockTracker.unlockCard(ClawSnap.ID);
         UnlockTracker.unlockCard(CustomClaw.ID);
         UnlockTracker.unlockCard(FrostBarrage.ID);
@@ -62,6 +67,9 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(IceBeam.ID);
 
 
+        BaseMod.removeCard("Conserve Battery", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Stack", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Rebound", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Cold Snap", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Claw", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Barrage", AbstractCard.CardColor.BLUE);
