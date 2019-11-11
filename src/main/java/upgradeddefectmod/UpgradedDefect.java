@@ -2,10 +2,7 @@ package upgradeddefectmod;
 
 import basemod.BaseMod;
 import basemod.helpers.RelicType;
-import basemod.interfaces.EditCardsSubscriber;
-import basemod.interfaces.EditKeywordsSubscriber;
-import basemod.interfaces.EditRelicsSubscriber;
-import basemod.interfaces.EditStringsSubscriber;
+import basemod.interfaces.*;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.localization.CardStrings;
@@ -46,7 +43,13 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new Infuse());
         BaseMod.addCard(new RoboticWalls());
         BaseMod.addCard(new Hack());
+        BaseMod.addCard(new FrostBarrage());
+        BaseMod.addCard(new CustomClaw());
+        BaseMod.addCard(new ClawSnap());
 
+        UnlockTracker.unlockCard(ClawSnap.ID);
+        UnlockTracker.unlockCard(CustomClaw.ID);
+        UnlockTracker.unlockCard(FrostBarrage.ID);
         UnlockTracker.unlockCard(Hack.ID);
         UnlockTracker.unlockCard(RoboticWalls.ID);
         UnlockTracker.unlockCard(Infuse.ID);
@@ -58,8 +61,12 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(ShockingTouch.ID);
         UnlockTracker.unlockCard(IceBeam.ID);
 
+
+        BaseMod.removeCard("Cold Snap", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Claw", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Barrage", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Overclock", AbstractCard.CardColor.BLUE);
-        BaseMod.removeCard("Sunder", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Self Repair", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Thunder Strike", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Go for the Eyes", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Compile Driver", AbstractCard.CardColor.BLUE);
@@ -117,5 +124,9 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
     public void receiveEditKeywords() {
         String[] host = {"host"};
         BaseMod.addKeyword(host, "The parasite eats away at the host, who loses more HP every turn.");
+        String[] claw = {"claw"};
+        BaseMod.addKeyword(claw, "Increase the damage of ALL Claw cards by 1 this combat.");
+
     }
+
 }

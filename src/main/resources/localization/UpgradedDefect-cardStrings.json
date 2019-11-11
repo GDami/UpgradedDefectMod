@@ -13,7 +13,7 @@
   },
   "UpgradedDefect:Parasite": {
     "NAME": "Parasite",
-    "DESCRIPTION": "Apply !M! Parasite. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Host. NL Exhaust."
   },
   "UpgradedDefect:Accelerate": {
     "NAME": "Accelerate",
@@ -37,6 +37,18 @@
   },
   "UpgradedDefect:Hack": {
     "NAME": "Hack",
-    "DESCRIPTION": "Draw !M! cards. NL You draw 2 cards "
+    "DESCRIPTION": "Draw !M! cards. NL You draw 1 less card next turn."
+  },
+  "UpgradedDefect:FrostBarrage": {
+    "NAME": "Frost Barrage",
+    "DESCRIPTION": "Deal !D! damage for each Channeled Frost."
+  },
+  "UpgradedDefect:CustomClaw": {
+    "NAME": "Claw",
+    "DESCRIPTION": "Deal !D! damage. NL Claw."
+  },
+  "UpgradedDefect:ClawSnap": {
+    "NAME": "Claw Snap",
+    "DESCRIPTION": "Deal !D! damage. Channel !M! Frost. NL Claw."
   }
 }
