@@ -161,7 +161,7 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
     @Override
     public void receiveEditKeywords() {
         String[] host = {"host"};
-        BaseMod.addKeyword(host, "The parasite eats away at the host, who loses more HP every turn.");
+        BaseMod.addKeyword(host, "The parasite eats away at the host, who loses HP every turn.");
         String[] claw = {"claw"};
         BaseMod.addKeyword(claw, "Increase the damage of ALL Claw cards by 1 this combat.");
 

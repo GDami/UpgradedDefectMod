@@ -13,7 +13,7 @@
   },
   "UpgradedDefect:Parasite": {
     "NAME": "Parasite",
-    "DESCRIPTION": "Apply !M! Host. NL Exhaust."
+    "DESCRIPTION": "Apply !M! Host."
   },
   "UpgradedDefect:Accelerate": {
     "NAME": "Accelerate",

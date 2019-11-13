@@ -22,9 +22,8 @@ public class Parasite extends CustomCard {
 
     public Parasite() {
         super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.SKILL, CardColor.BLUE, CardRarity.RARE, CardTarget.ENEMY);
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
-        this.exhaust = true;
     }
 
     public AbstractCard makeCopy() {
@@ -34,8 +33,8 @@ public class Parasite extends CustomCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.upgradeBaseCost(0);
             this.upgradeName();
+            this.upgradeMagicNumber(2);
         }
     }
 

@@ -2,8 +2,7 @@
   "UpgradedDefect:Parasite": {
     "NAME": "Host",
     "DESCRIPTIONS": ["At the start of their turn, lose #b",
-      " #yHP and increase this effect by #b",
-      "."
+      " #yHP."
     ]
   },
   "UpgradedDefect:RoboticWalls": {
