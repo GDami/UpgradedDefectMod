@@ -22,7 +22,7 @@ public class CustomMachineLearning extends CustomCard {
     private static final int COST = 1;
 
     public CustomMachineLearning() {
-        super(ID, NAME, IMG_NAME, COST, DESCRIPTION, AbstractCard.CardType.POWER, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.RARE, AbstractCard.CardTarget.NONE);
+        super(ID, NAME, IMG_NAME, COST, DESCRIPTION, AbstractCard.CardType.POWER, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.UNCOMMON, AbstractCard.CardTarget.NONE);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }

@@ -1,21 +1,21 @@
 package upgradeddefectmod.powers;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.defect.ChannelAction;
+import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import upgradeddefectmod.UpgradedDefect;
 
-public class ChaosPower extends UpgradedDefectPower {
+import java.util.ArrayList;
 
-    private static final String POWER_ID = "UpgradedDefect:Chaos";
+public class CleanUpPower extends UpgradedDefectPower {
 
-    public ChaosPower(AbstractCreature owner, int amount) {
+    private static final String POWER_ID = "UpgradedDefect:CleanUp";
+
+    public CleanUpPower(AbstractCreature owner, int amount) {
         super(POWER_ID, owner, amount);
     }
 
@@ -33,11 +33,17 @@ public class ChaosPower extends UpgradedDefectPower {
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
-        for (int i=0; i<this.amount; i++) {
+    public void afterMonstersTurn() {
+        ArrayList<AbstractPower> tmpZizi = new ArrayList();
+        for (AbstractPower p : this.owner.powers) {
+            if (p.type == PowerType.DEBUFF) {
+                tmpZizi.add(p);
+            }
+        }
+        if (!tmpZizi.isEmpty()) {
             this.flash();
-            AbstractDungeon.actionManager.addToBottom(new ChannelAction(AbstractOrb.getRandomOrb(true)));
+            int removeIndex = AbstractDungeon.cardRng.random(0, tmpZizi.size() - 1);
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, tmpZizi.get(removeIndex).ID));
         }
     }
-
 }

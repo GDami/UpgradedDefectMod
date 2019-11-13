@@ -3,9 +3,13 @@ package upgradeddefectmod;
 import basemod.BaseMod;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
+import com.badlogic.gdx.Gdx;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
@@ -16,12 +20,16 @@ import upgradeddefectmod.relics.Battery;
 import upgradeddefectmod.relics.Kaleidoscope;
 import upgradeddefectmod.relics.Stalactite;
 
+import java.lang.reflect.Type;
+import java.nio.charset.StandardCharsets;
+import java.util.Map;
+
 @SpireInitializer
 public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscriber, EditCardsSubscriber, EditStringsSubscriber {
 
     private static final String ASSETS_FOLDER = "img/";
 
-    private static final Logger logger = LogManager.getLogger(UpgradedDefect.class.getName());
+    public static final Logger logger = LogManager.getLogger(UpgradedDefect.class.getName());
 
     public UpgradedDefect() {
         BaseMod.subscribe(this);
@@ -59,7 +67,13 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new CustomChill());
         BaseMod.addCard(new CustomMachineLearning());
         BaseMod.addCard(new Discharge());
+        BaseMod.addCard(new ClawCounter());
+        BaseMod.addCard(new Clawrd());
+        BaseMod.addCard(new CleanUp());
 
+        UnlockTracker.unlockCard(CleanUp.ID);
+        UnlockTracker.unlockCard(Clawrd.ID);
+        UnlockTracker.unlockCard(ClawCounter.ID);
         UnlockTracker.unlockCard(Discharge.ID);
         UnlockTracker.unlockCard(CustomMachineLearning.ID);
         UnlockTracker.unlockCard(CustomChill.ID);
@@ -87,6 +101,9 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(IceBeam.ID);
 
 
+        BaseMod.removeCard("Meteor Strike", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Multi-Cast", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Streamline", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Melter", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Machine Learning", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Chill", AbstractCard.CardColor.BLUE);
@@ -160,11 +177,21 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
 
     @Override
     public void receiveEditKeywords() {
-        String[] host = {"host"};
-        BaseMod.addKeyword(host, "The parasite eats away at the host, who loses HP every turn.");
-        String[] claw = {"claw"};
-        BaseMod.addKeyword(claw, "Increase the damage of ALL Claw cards by 1 this combat.");
 
+        Type typeToken = new TypeToken<Map<String, Keyword>>(){}.getType();
+        Gson gson = new Gson();
+        String strings = loadJson("localization/UpgradedDefect-keywordStrings.json");
+        Map<String,Keyword> keywords = gson.fromJson(strings, typeToken);
+        for (Keyword kw : keywords.values()) {
+            BaseMod.addKeyword(kw.NAMES, kw.DESCRIPTION);
+        }
+        logger.info("done editing keywords");
+
+
+    }
+
+    private static String loadJson(String jsonPath) {
+        return Gdx.files.internal(jsonPath).readString(String.valueOf(StandardCharsets.UTF_8));
     }
 
 }

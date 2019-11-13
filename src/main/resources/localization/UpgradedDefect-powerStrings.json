@@ -23,5 +23,12 @@
     "DESCRIPTIONS": ["Every HP loss grants you #b",
       " healing at the end of combat."
     ]
+  },
+  "UpgradedDefect:CleanUp": {
+    "NAME": "CClean",
+    "DESCRIPTIONS": ["At the start of your turn, remove #b",
+      " random #ydebuff.",
+      " random #ydebuffs"
+    ]
   }
 }

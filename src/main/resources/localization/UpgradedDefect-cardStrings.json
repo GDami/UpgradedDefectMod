@@ -103,5 +103,18 @@
   "UpgradedDefect:MachineLearning": {
     "NAME": "Machine Learning",
     "DESCRIPTION": "Every time you lose HP, heal !M! HP at the end of combat."
+  },
+  "UpgradedDefect:Clawrd": {
+    "NAME": "Clawrd",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. NL Claw."
+  },
+  "UpgradedDefect:ClawCounter": {
+    "NAME": "Claw Counter",
+    "DESCRIPTION": "Deal !D! damage. NL If the enemy intends to attack, apply !M! Weak. NL Claw."
+  },
+  "UpgradedDefect:CleanUp": {
+    "NAME": "CClean",
+    "DESCRIPTION": "At the start of your turn, remove !M! random debuff.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, remove !M! random debuff."
   }
 }

@@ -6,6 +6,8 @@ import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.unlock.AbstractUnlock;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import com.megacrit.cardcrawl.unlock.cards.DefectCards.EchoFormUnlock;
+import com.megacrit.cardcrawl.unlock.cards.DefectCards.SunderUnlock;
+import com.megacrit.cardcrawl.unlock.cards.DefectCards.TurboUnlock;
 import com.megacrit.cardcrawl.unlock.cards.DefectCards.UndoUnlock;
 import javassist.CtBehavior;
 import org.apache.logging.log4j.LogManager;
@@ -28,6 +30,10 @@ public class UnlockPatch {
                 case 0:
                     patchBundle.add(new UndoUnlock());
                     patchBundle.add(new EchoFormUnlock());
+                    return SpireReturn.Return(patchBundle);
+                case 1:
+                    patchBundle.add(new TurboUnlock());
+                    patchBundle.add(new SunderUnlock());
                     return SpireReturn.Return(patchBundle);
             }
         }

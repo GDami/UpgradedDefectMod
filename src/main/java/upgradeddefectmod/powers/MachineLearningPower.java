@@ -11,20 +11,13 @@ import com.megacrit.cardcrawl.powers.RepairPower;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import upgradeddefectmod.UpgradedDefect;
 
-public class MachineLearningPower extends AbstractPower {
+public class MachineLearningPower extends UpgradedDefectPower {
 
 
     private static final String POWER_ID = "UpgradedDefect:MachineLearning";
-    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public MachineLearningPower(AbstractCreature owner, int amount) {
-        this.ID = POWER_ID;
-        this.name = powerStrings.NAME;
-        this.owner = owner;
-        this.amount = amount;
-        this.updateDescription();
-        this.img = new Texture(UpgradedDefect.makePowerPath(POWER_ID.split(":")[1]));
+        super(POWER_ID, owner, amount);
     }
 
     public void stackPower(int stackAmount) {
@@ -38,6 +31,7 @@ public class MachineLearningPower extends AbstractPower {
 
     public int onLoseHp(int damageAmount) {
         if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && damageAmount > 0) {
+            this.flash();
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RepairPower(this.owner, this.amount), this.amount));
         }
         return damageAmount;

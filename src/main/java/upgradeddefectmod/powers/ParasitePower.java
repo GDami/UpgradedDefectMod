@@ -10,19 +10,12 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import upgradeddefectmod.UpgradedDefect;
 
-public class ParasitePower extends AbstractPower {
+public class ParasitePower extends UpgradedDefectPower {
 
     private static final String POWER_ID = "UpgradedDefect:Parasite";
-    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public ParasitePower(AbstractCreature owner, int amount) {
-        this.ID = POWER_ID;
-        this.name = powerStrings.NAME;
-        this.owner = owner;
-        this.amount = amount;
-        this.updateDescription();
-        this.img = new Texture(UpgradedDefect.makePowerPath(POWER_ID.split(":")[1]));
+        super(POWER_ID, owner, amount);
         this.type = PowerType.DEBUFF;
     }
 

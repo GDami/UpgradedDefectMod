@@ -1,0 +1,10 @@
+{
+  "HOST": {
+    "NAMES": ["host"],
+    "DESCRIPTION": "The parasite eats away at the host, who loses HP every turn."
+  },
+  "CLAW": {
+    "NAMES": ["claw"],
+    "DESCRIPTION": "Increase the damage of ALL Claw cards by 1 this combat."
+  }
+}

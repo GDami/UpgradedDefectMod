@@ -12,19 +12,12 @@ import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.PlatedArmorPower;
 import upgradeddefectmod.UpgradedDefect;
 
-public class RoboticWallsPower extends AbstractPower {
+public class RoboticWallsPower extends UpgradedDefectPower {
 
     private static final String POWER_ID = "UpgradedDefect:RoboticWalls";
-    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
-    private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public RoboticWallsPower(AbstractCreature owner, int amount) {
-        this.ID = POWER_ID;
-        this.name = powerStrings.NAME;
-        this.owner = owner;
-        this.amount = amount;
-        this.updateDescription();
-        this.img = new Texture(UpgradedDefect.makePowerPath(POWER_ID.split(":")[1]));
+        super(POWER_ID, owner, amount);
     }
 
     public void stackPower(int stackAmount) {
@@ -39,6 +32,7 @@ public class RoboticWallsPower extends AbstractPower {
     @Override
     public void onChannel(AbstractOrb o) {
         if (o instanceof Frost) {
+            this.flash();
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new PlatedArmorPower(AbstractDungeon.player, this.amount), this.amount));
         }
     }

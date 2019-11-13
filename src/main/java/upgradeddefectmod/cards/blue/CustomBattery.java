@@ -24,7 +24,7 @@ public class CustomBattery extends CustomCard {
 
     public CustomBattery() {
         super(ID, NAME, IMG_NAME, COST, DESCRIPTION, AbstractCard.CardType.SKILL, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.COMMON, AbstractCard.CardTarget.NONE);
-        this.baseBlock = 6;
+        this.baseBlock = 5;
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
     }

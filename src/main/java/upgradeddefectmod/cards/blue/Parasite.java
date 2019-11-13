@@ -21,7 +21,7 @@ public class Parasite extends CustomCard {
     private static final int COST = 1;
 
     public Parasite() {
-        super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.SKILL, CardColor.BLUE, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.SKILL, CardColor.BLUE, CardRarity.UNCOMMON, CardTarget.ENEMY);
         this.baseMagicNumber = 4;
         this.magicNumber = this.baseMagicNumber;
     }
