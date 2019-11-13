@@ -43,7 +43,7 @@
     "NAME": "Frost Barrage",
     "DESCRIPTION": "Deal !D! damage for each Channeled Frost."
   },
-  "UpgradedDefect:CustomClaw": {
+  "UpgradedDefect:Claw": {
     "NAME": "Claw",
     "DESCRIPTION": "Deal !D! damage twice. NL Claw."
   },
@@ -56,24 +56,52 @@
     "DESCRIPTION": "Deal !D! damage. NL Put the next card you play this turn on top of your draw pile. NL Claw.",
     "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Put the next card you play this turn on top of your draw pile. NL Claw twice."
   },
-  "UpgradedDefect:CustomStack": {
+  "UpgradedDefect:Stack": {
     "NAME": "Stack",
     "DESCRIPTION": "Gain !B! Block. NL Increase this block by !M! this combat. NL Claw."
   },
-  "UpgradedDefect:CustomBattery": {
+  "UpgradedDefect:ChargeBattery": {
     "NAME": "Charge Battery",
     "DESCRIPTION": "Gain !B! Block. NL Channel !M! Lightning."
   },
-  "UpgradedDefect:CustomBeamCell": {
+  "UpgradedDefect:BeamCell": {
     "NAME": "Beam Cell",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Lock-On."
   },
   "UpgradedDefect:LightningAura": {
     "NAME": "Lightning Aura",
-    "DESCRIPTION": "Channel !M! Lightning. NL Gain 3 Block for every Lightning orb you have."
+    "DESCRIPTION": "Channel !M! Lightning. NL Gain 2 Block for every Lightning orb you have."
   },
-  "UpgradedDefect:CustomGlacier": {
+  "UpgradedDefect:Glacier": {
     "NAME": "Glacier",
     "DESCRIPTION": "Gain !B! Block. NL Channel 1 Frost."
+  },
+  "UpgradedDefect:Install": {
+    "NAME": "Install",
+    "DESCRIPTION": "Channel 2 Frost. NL Trigger the passive ability of all Frost orbs. NL Draw !M! card.",
+    "UPGRADE_DESCRIPTION": "Channel 2 Frost. NL Trigger the passive ability of all Frost orbs. NL Draw !M! cards."
+  },
+  "UpgradedDefect:ClawLightning": {
+    "NAME": "Claw Lightning",
+    "DESCRIPTION": "Deal !D! damage. Channel !M! Lightning. NL Claw."
+  },
+  "UpgradedDefect:Chaos": {
+    "NAME": "Chaos",
+    "DESCRIPTION": "At the start of your turn, channel !M! random orb.",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, channel !M! random orbs."
+  },
+  "UpgradedDefect:Chill": {
+    "NAME": "Chill",
+    "DESCRIPTION": "Channel !M! Frost. NL Draw 1 card for each enemy in combat. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Channel !M! Frost. NL Draw 1 card for each enemy in combat. NL Exhaust."
+  },
+  "UpgradedDefect:Discharge": {
+    "NAME": "Discharge",
+    "DESCRIPTION": "Channel 1 Lightning. NL Trigger the passive ability of all Lightning orbs.",
+    "UPGRADE_DESCRIPTION": "Apply !M! Weak. NL Channel 1 Lightning. NL Trigger the passive ability of all Lightning orbs."
+  },
+  "UpgradedDefect:MachineLearning": {
+    "NAME": "Machine Learning",
+    "DESCRIPTION": "Every time you lose HP, heal !M! HP at the end of combat."
   }
 }

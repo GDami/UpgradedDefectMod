@@ -17,7 +17,7 @@ import upgradeddefectmod.cards.tags.CustomCardTags;
 
 public class CustomBeamCell extends CustomCard {
 
-    public static final String ID = "UpgradedDefect:CustomBeamCell";
+    public static final String ID = "UpgradedDefect:BeamCell";
     private static final String IMG_NAME = UpgradedDefect.makeCardPath(ID.split(":")[1]);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = cardStrings.NAME;

@@ -8,7 +8,12 @@
   },
   "Kaleidoscope": {
     "NAME": "Kaleidoscope",
-    "FLAVOR": "A very bizarre tool that reminds you of your childhood.",
-    "DESCRIPTIONS": ["Every #b10th #ySkill you play, gain #b1 #yFocus"]
+    "FLAVOR": "A very bizarre tool that reminds you of your past days.",
+    "DESCRIPTIONS": ["Every #b15th #ySkill you play, channel #b1 #yLightning, #b1 #yFrost and #b1 #yDark."]
+  },
+  "Battery": {
+    "NAME": "Battery",
+    "FLAVOR": "This relic of ancient times was used to power all kinds of artefacts.",
+    "DESCRIPTIONS": ["Every #b10th #yLightning you channel, gain #b1 #yFocus"]
   }
 }

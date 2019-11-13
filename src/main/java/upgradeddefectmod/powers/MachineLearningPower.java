@@ -6,19 +6,19 @@ import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.orbs.AbstractOrb;
-import com.megacrit.cardcrawl.orbs.Frost;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.PlatedArmorPower;
+import com.megacrit.cardcrawl.powers.RepairPower;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import upgradeddefectmod.UpgradedDefect;
 
-public class RoboticWallsPower extends AbstractPower {
+public class MachineLearningPower extends AbstractPower {
 
-    private static final String POWER_ID = "UpgradedDefect:RoboticWalls";
+
+    private static final String POWER_ID = "UpgradedDefect:MachineLearning";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public RoboticWallsPower(AbstractCreature owner, int amount) {
+    public MachineLearningPower(AbstractCreature owner, int amount) {
         this.ID = POWER_ID;
         this.name = powerStrings.NAME;
         this.owner = owner;
@@ -36,10 +36,10 @@ public class RoboticWallsPower extends AbstractPower {
         this.description = DESCRIPTIONS[0] + this.amount + DESCRIPTIONS[1];
     }
 
-    @Override
-    public void onChannel(AbstractOrb o) {
-        if (o instanceof Frost) {
-            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new PlatedArmorPower(AbstractDungeon.player, this.amount), this.amount));
+    public int onLoseHp(int damageAmount) {
+        if (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT && damageAmount > 0) {
+            AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RepairPower(this.owner, this.amount), this.amount));
         }
+        return damageAmount;
     }
 }

@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.orbs.Frost;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 import upgradeddefectmod.UpgradedDefect;
 
-public class Stalactite extends CustomRelic {
+public class Stalactite extends UpgradedDefectRelic {
 
     private static final String ID = "Stalactite";
     //private static final RelicStrings relicStrings = CardCrawlGame.languagePack.getRelicStrings(ID);
@@ -19,7 +19,7 @@ public class Stalactite extends CustomRelic {
     //private static final String[] DESCRIPTIONS = relicStrings.DESCRIPTIONS;
 
     public Stalactite() {
-        super(ID, new Texture(UpgradedDefect.makeRelicPath(ID)), RelicTier.UNCOMMON, LandingSound.CLINK);
+        super(ID, new Texture(UpgradedDefect.makeRelicPath(ID)), RelicTier.COMMON, LandingSound.CLINK);
         }
 
     public String getUpdatedDescription() {

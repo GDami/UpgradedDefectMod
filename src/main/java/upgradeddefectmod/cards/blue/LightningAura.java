@@ -45,6 +45,6 @@ public class LightningAura extends CustomCard {
         for (int i = 0; i<this.magicNumber; i++) {
             AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Lightning()));
         }
-        AbstractDungeon.actionManager.addToBottom(new CustomFluxAction(p, 3));
+        AbstractDungeon.actionManager.addToBottom(new CustomFluxAction(p, 2));
     }
 }

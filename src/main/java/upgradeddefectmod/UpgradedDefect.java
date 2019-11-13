@@ -12,6 +12,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import upgradeddefectmod.cards.blue.*;
+import upgradeddefectmod.relics.Battery;
 import upgradeddefectmod.relics.Kaleidoscope;
 import upgradeddefectmod.relics.Stalactite;
 
@@ -52,12 +53,25 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new CustomBeamCell());
         BaseMod.addCard(new CustomGlacier());
         BaseMod.addCard(new LightningAura());
+        BaseMod.addCard(new Install());
+        BaseMod.addCard(new ClawLightning());
+        BaseMod.addCard(new CustomChaos());
+        BaseMod.addCard(new CustomChill());
+        BaseMod.addCard(new CustomMachineLearning());
+        BaseMod.addCard(new Discharge());
 
+        UnlockTracker.unlockCard(Discharge.ID);
+        UnlockTracker.unlockCard(CustomMachineLearning.ID);
+        UnlockTracker.unlockCard(CustomChill.ID);
+        UnlockTracker.unlockCard(CustomChaos.ID);
+        UnlockTracker.unlockCard(ClawLightning.ID);
+        UnlockTracker.unlockCard(Install.ID);
         UnlockTracker.unlockCard(LightningAura.ID);
         UnlockTracker.unlockCard(CustomGlacier.ID);
         UnlockTracker.unlockCard(CustomBeamCell.ID);
         UnlockTracker.unlockCard(CustomBattery.ID);
         UnlockTracker.unlockCard(CustomStack.ID);
+        UnlockTracker.unlockCard(Clawbound.ID);
         UnlockTracker.unlockCard(ClawSnap.ID);
         UnlockTracker.unlockCard(CustomClaw.ID);
         UnlockTracker.unlockCard(FrostBarrage.ID);
@@ -73,6 +87,12 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(IceBeam.ID);
 
 
+        BaseMod.removeCard("Melter", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Machine Learning", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Chill", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Chaos", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Ball Lightning", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Coolheaded", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Blizzard", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Glacier", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Beam Cell", AbstractCard.CardColor.BLUE);
@@ -134,6 +154,7 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         logger.info("editing relics");
         BaseMod.addRelic(new Stalactite(), RelicType.BLUE);
         BaseMod.addRelic(new Kaleidoscope(), RelicType.BLUE);
+        BaseMod.addRelic(new Battery(), RelicType.BLUE);
         logger.info("done editing relics");
     }
 

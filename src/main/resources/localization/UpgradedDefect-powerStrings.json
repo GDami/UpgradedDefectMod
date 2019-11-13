@@ -1,15 +1,28 @@
 {
-  "TutoMod:Parasite": {
+  "UpgradedDefect:Parasite": {
     "NAME": "Host",
     "DESCRIPTIONS": ["At the start of their turn, lose #b",
       " #yHP and increase this effect by #b",
       "."
     ]
   },
-  "TutoMod:RoboticWalls": {
+  "UpgradedDefect:RoboticWalls": {
     "NAME": "Robotic Walls",
     "DESCRIPTIONS": ["Every time you channel #b1 #yFrost, gain #b",
       " #yPlated #yArmor."
+    ]
+  },
+  "UpgradedDefect:Chaos": {
+    "NAME": "Chaos",
+    "DESCRIPTIONS": ["At the start of your turn, channel #b",
+      " random orb.",
+      " random orbs."
+    ]
+  },
+  "UpgradedDefect:MachineLearning": {
+    "NAME": "MachineLearning",
+    "DESCRIPTIONS": ["Every HP loss grants you #b",
+      " healing at the end of combat."
     ]
   }
 }

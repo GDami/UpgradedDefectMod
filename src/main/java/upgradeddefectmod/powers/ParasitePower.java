@@ -12,7 +12,7 @@ import upgradeddefectmod.UpgradedDefect;
 
 public class ParasitePower extends AbstractPower {
 
-    private static final String POWER_ID = "TutoMod:Parasite";
+    private static final String POWER_ID = "UpgradedDefect:Parasite";
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     private static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
@@ -23,6 +23,7 @@ public class ParasitePower extends AbstractPower {
         this.amount = amount;
         this.updateDescription();
         this.img = new Texture(UpgradedDefect.makePowerPath(POWER_ID.split(":")[1]));
+        this.type = PowerType.DEBUFF;
     }
 
     public void stackPower(int stackAmount) {
