@@ -1,7 +1,10 @@
 package upgradeddefectmod.cards.blue;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.animations.VFXAction;
+import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
@@ -10,6 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.vfx.combat.ClawEffect;
 import upgradeddefectmod.UpgradedDefect;
 import upgradeddefectmod.actions.ClawAction;
 import upgradeddefectmod.cards.tags.CustomCardTags;
@@ -44,10 +48,18 @@ public class Clawrd extends CustomCard {
         }
     }
 
+    private AbstractMonster getMonster() {
+        return AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+    }
+
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         for (int i=0; i<this.magicNumber; i++) {
-            AbstractDungeon.actionManager.addToBottom(new DamageRandomEnemyAction(new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL), AbstractGameAction.AttackEffect.SMASH));
+            AbstractMonster monster = getMonster();
+            if (monster != null) {
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new ClawEffect(monster.hb.cX, monster.hb.cY, Color.CYAN, Color.WHITE), 0.1F));
+            }
+            AbstractDungeon.actionManager.addToBottom(new DamageAction(monster, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL)));
         }
         AbstractDungeon.actionManager.addToBottom(new ClawAction(this));
     }

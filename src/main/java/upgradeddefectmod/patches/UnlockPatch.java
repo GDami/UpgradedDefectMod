@@ -32,7 +32,6 @@ public class UnlockPatch {
                     patchBundle.add(new EchoFormUnlock());
                     return SpireReturn.Return(patchBundle);
                 case 1:
-                    patchBundle.add(new TurboUnlock());
                     patchBundle.add(new SunderUnlock());
                     return SpireReturn.Return(patchBundle);
             }

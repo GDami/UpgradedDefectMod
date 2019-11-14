@@ -116,5 +116,14 @@
     "NAME": "CClean",
     "DESCRIPTION": "At the start of your turn, remove !M! random debuff.",
     "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, remove !M! random debuff."
+  },
+  "UpgradedDefect:Reprogram": {
+    "NAME": "Reprogram",
+    "DESCRIPTION": "Reset your Strenght, Dexterity and Focus. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Reset your Strenght, Dexterity and Focus."
+  },
+  "UpgradedDefect:Turbo": {
+    "NAME": "TURBO",
+    "DESCRIPTION": "Gain !M! Focus. NL Next turn, lose !M! Focus."
   }
 }

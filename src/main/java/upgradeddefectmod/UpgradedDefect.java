@@ -70,7 +70,11 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new ClawCounter());
         BaseMod.addCard(new Clawrd());
         BaseMod.addCard(new CleanUp());
+        BaseMod.addCard(new CustomReprogram());
+        BaseMod.addCard(new CustomTurbo());
 
+        UnlockTracker.unlockCard(CustomTurbo.ID);
+        UnlockTracker.unlockCard(CustomReprogram.ID);
         UnlockTracker.unlockCard(CleanUp.ID);
         UnlockTracker.unlockCard(Clawrd.ID);
         UnlockTracker.unlockCard(ClawCounter.ID);
@@ -101,6 +105,8 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(IceBeam.ID);
 
 
+        BaseMod.removeCard("Turbo", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Reprogram", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Meteor Strike", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Multi-Cast", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Streamline", AbstractCard.CardColor.BLUE);

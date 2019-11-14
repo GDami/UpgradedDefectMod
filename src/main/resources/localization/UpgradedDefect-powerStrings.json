@@ -30,5 +30,11 @@
       " random #ydebuff.",
       " random #ydebuffs"
     ]
+  },
+  "UpgradedDefect:LoseFocus": {
+    "NAME": "Focus Down",
+    "DESCRIPTIONS": ["At the start of your next turn, lose #b",
+      " #yFocus."
+    ]
   }
 }
