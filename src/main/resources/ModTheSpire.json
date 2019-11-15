@@ -1,10 +1,10 @@
 {
-  "modid": "UpgradedDefect",
-  "name": "UpgradedDefect",
-  "author_list": ["dami420"],
-  "description": "Different cards for the Defect",
-  "version": "0.2.3",
-  "sts_version": "07-17-2019",
-  "mts_version": "3.14.1",
-  "dependencies": ["basemod"]
+"modid": "UpgradedDefect",
+"name": "UpgradedDefect",
+"author_list": ["dami420"],
+"description": "Different cards for the Defect",
+"version": "0.2.4",
+"sts_version": "07-17-2019",
+"mts_version": "3.14.1",
+"dependencies": ["basemod"]
 }

@@ -36,5 +36,11 @@
     "DESCRIPTIONS": ["At the start of your next turn, lose #b",
       " #yFocus."
     ]
+  },
+  "UpgradedDefect:AutoShields": {
+    "NAME": "Auto-Shields",
+    "DESCRIPTIONS": ["Every time you channel #b1 #yLightning, gain #b",
+      " #yBlock."
+    ]
   }
 }

@@ -70,7 +70,7 @@
   },
   "UpgradedDefect:LightningAura": {
     "NAME": "Lightning Aura",
-    "DESCRIPTION": "Channel !M! Lightning. NL Gain 2 Block for every Lightning orb you have."
+    "DESCRIPTION": "Channel !M! Lightning. NL Gain !B! Block for every Lightning orb you have."
   },
   "UpgradedDefect:Glacier": {
     "NAME": "Glacier",
@@ -125,5 +125,27 @@
   "UpgradedDefect:Turbo": {
     "NAME": "TURBO",
     "DESCRIPTION": "Gain !M! Focus. NL Next turn, lose !M! Focus."
+  },
+  "UpgradedDefect:DarkWave": {
+    "NAME": "Dark Wave",
+    "DESCRIPTION": "Replace ALL your orbs with Dark orbs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Replace ALL your orbs with Dark orbs. NL Trigger the passive ability of all Dark orbs. NL Exhaust."
+  },
+  "UpgradedDefect:Hologram": {
+    "NAME": "Hologram",
+    "DESCRIPTION": "Deal !D! damage. NL Next turn gain !B! Block.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Next turn gain !B! Block and draw !M! card."
+  },
+  "UpgradedDefect:SweepingClaw": {
+    "NAME": "Sweeping Claw",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Draw 1 card. NL Claw."
+  },
+  "UpgradedDefect:AutoShields": {
+    "NAME": "Auto-Shields",
+    "DESCRIPTION": "Every time you channel 1 Lightning, gain !M! Block."
+  },
+  "UpgradedDefect:ForceField": {
+    "NAME": "Force Field",
+    "DESCRIPTION": "Apply !M! Lock-On  to ALL enemies. NL Channel !UpgradedDefect:SN! Lightning. NL Exhaust."
   }
 }

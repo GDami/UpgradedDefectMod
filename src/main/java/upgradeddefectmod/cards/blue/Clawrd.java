@@ -57,7 +57,7 @@ public class Clawrd extends CustomCard {
         for (int i=0; i<this.magicNumber; i++) {
             AbstractMonster monster = getMonster();
             if (monster != null) {
-                AbstractDungeon.actionManager.addToBottom(new VFXAction(new ClawEffect(monster.hb.cX, monster.hb.cY, Color.CYAN, Color.WHITE), 0.1F));
+                AbstractDungeon.actionManager.addToBottom(new VFXAction(new ClawEffect(monster.hb.cX, monster.hb.cY, Color.RED, Color.WHITE), 0.1F));
             }
             AbstractDungeon.actionManager.addToBottom(new DamageAction(monster, new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL)));
         }

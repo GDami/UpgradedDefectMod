@@ -19,6 +19,7 @@ import upgradeddefectmod.cards.blue.*;
 import upgradeddefectmod.relics.Battery;
 import upgradeddefectmod.relics.Kaleidoscope;
 import upgradeddefectmod.relics.Stalactite;
+import upgradeddefectmod.variables.SecondNumber;
 
 import java.lang.reflect.Type;
 import java.nio.charset.StandardCharsets;
@@ -41,6 +42,11 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
 
     @Override
     public void receiveEditCards() {
+
+        logger.info("adding variables");
+        BaseMod.addDynamicVariable(new SecondNumber());
+        logger.info("done adding variables");
+
         logger.info("editing cards");
         BaseMod.addCard(new IceBeam());
         BaseMod.addCard(new ShockingTouch());
@@ -72,7 +78,17 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new CleanUp());
         BaseMod.addCard(new CustomReprogram());
         BaseMod.addCard(new CustomTurbo());
+        BaseMod.addCard(new DarkWave());
+        BaseMod.addCard(new CustomAutoShields());
+        BaseMod.addCard(new CustomForceField());
+        BaseMod.addCard(new CustomHologram());
+        BaseMod.addCard(new SweepingClaw());
 
+        UnlockTracker.unlockCard(SweepingClaw.ID);
+        UnlockTracker.unlockCard(CustomHologram.ID);
+        UnlockTracker.unlockCard(CustomForceField.ID);
+        UnlockTracker.unlockCard(CustomAutoShields.ID);
+        UnlockTracker.unlockCard(DarkWave.ID);
         UnlockTracker.unlockCard(CustomTurbo.ID);
         UnlockTracker.unlockCard(CustomReprogram.ID);
         UnlockTracker.unlockCard(CleanUp.ID);
@@ -105,6 +121,11 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(IceBeam.ID);
 
 
+        BaseMod.removeCard("Sweeping Beam", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Hologram", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Force Field", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Auto Shields", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Redo", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Turbo", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Reprogram", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Meteor Strike", AbstractCard.CardColor.BLUE);
