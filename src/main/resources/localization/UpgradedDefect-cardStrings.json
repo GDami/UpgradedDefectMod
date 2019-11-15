@@ -29,14 +29,14 @@
   },
   "UpgradedDefect:Infuse": {
     "NAME": "Infuse",
-    "DESCRIPTION": "Gain !M! Strenght. NL Lose 1 Focus. NL Lose 1 Orb slot. NL Exhaust."
+    "DESCRIPTION": "Gain !M! Strength. NL Lose 1 Focus. NL Lose 1 Orb slot. NL Exhaust."
   },
   "UpgradedDefect:RoboticWalls": {
     "NAME": "Robotic Walls",
     "DESCRIPTION": "Every time you channel 1 Frost, gain !M! Plated Armor."
   },
-  "UpgradedDefect:Hack": {
-    "NAME": "Hack",
+  "UpgradedDefect:Skim": {
+    "NAME": "Skim",
     "DESCRIPTION": "Draw !M! cards. NL You draw 1 less card next turn."
   },
   "UpgradedDefect:FrostBarrage": {
@@ -102,7 +102,7 @@
   },
   "UpgradedDefect:MachineLearning": {
     "NAME": "Machine Learning",
-    "DESCRIPTION": "Every time you lose HP, heal !M! HP at the end of combat."
+    "DESCRIPTION": "Innate. NL Every time you lose HP, heal !M! HP at the end of combat."
   },
   "UpgradedDefect:Clawrd": {
     "NAME": "Clawrd",
@@ -119,8 +119,8 @@
   },
   "UpgradedDefect:Reprogram": {
     "NAME": "Reprogram",
-    "DESCRIPTION": "Reset your Strenght, Dexterity and Focus. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Reset your Strenght, Dexterity and Focus."
+    "DESCRIPTION": "Reset your Strength, Dexterity and Focus. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Reset your Strength, Dexterity and Focus."
   },
   "UpgradedDefect:Turbo": {
     "NAME": "TURBO",
@@ -147,5 +147,42 @@
   "UpgradedDefect:ForceField": {
     "NAME": "Force Field",
     "DESCRIPTION": "Apply !M! Lock-On  to ALL enemies. NL Channel !UpgradedDefect:SN! Lightning. NL Exhaust."
+  },
+  "UpgradedDefect:HelloWorld": {
+    "NAME": "Hello World",
+    "DESCRIPTION": "Ethereal. NL When you channel an orb, trigger its passive once.",
+    "UPGRADE_DESCRIPTION": "When you channel an orb, trigger its passive once."
+  },
+  "UpgradedDefect:Hack": {
+    "NAME": "Hack",
+    "DESCRIPTION": "Apply !M! Lock-On. NL Exhaust."
+  },
+  "UpgradedDefect:FrostAura": {
+    "NAME": "Frost Aura",
+    "DESCRIPTION": "Fill your empty orb slots with Frost orbs. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Fill your empty orb slots with Frost orbs. NL Exhaust."
+  },
+  "UpgradedDefect:Consume": {
+    "NAME": "Consume",
+    "DESCRIPTION": "Gain !M! Focus and lose 1 Orb slot. NL Next turn lose 1 Orb slot."
+  },
+  "UpgradedDefect:DarkAura": {
+    "NAME": "Dark Aura",
+    "DESCRIPTION": "Your Dark orbs trigger their passive once more.",
+    "UPGRADE_DESCRIPTION": "Your Dark orbs trigger their passive once more. NL Channel 1 Dark."
+  },
+  "UpgradedDefect:ClearMind": {
+    "NAME": "Clear Mind",
+    "DESCRIPTION": "If the enemy intends to attack, gain !M! Focus. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "If the enemy intends to attack, gain !M! Focus."
+  },
+  "UpgradedDefect:WhiteNoise": {
+    "NAME": "White Noise",
+    "DESCRIPTION": "Add a random Power card into your hand. NL It costs 0 this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add a random Power card into your hand. NL It costs 0 this turn."
+  },
+  "UpgradedDefect:Metabolism": {
+    "NAME": "Metabolism",
+    "DESCRIPTION": "Gain !M! Strength and !M! Dexterity. NL At the start of your turn, lose 2 Focus."
   }
 }

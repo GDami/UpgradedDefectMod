@@ -1,6 +1,7 @@
 package upgradeddefectmod;
 
 import basemod.BaseMod;
+import basemod.devcommands.clear.Clear;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -57,7 +58,7 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new IcePalm());
         BaseMod.addCard(new Infuse());
         BaseMod.addCard(new RoboticWalls());
-        BaseMod.addCard(new Hack());
+        BaseMod.addCard(new CustomSkim());
         BaseMod.addCard(new FrostBarrage());
         BaseMod.addCard(new CustomClaw());
         BaseMod.addCard(new ClawSnap());
@@ -83,7 +84,23 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new CustomForceField());
         BaseMod.addCard(new CustomHologram());
         BaseMod.addCard(new SweepingClaw());
+        BaseMod.addCard(new CustomConsume());
+        BaseMod.addCard(new CustomHelloWorld());
+        BaseMod.addCard(new Hack());
+        BaseMod.addCard(new DarkAura());
+        BaseMod.addCard(new FrostAura());
+        BaseMod.addCard(new ClearMind());
+        BaseMod.addCard(new CustomWhiteNoise());
+        BaseMod.addCard(new Metabolism());
 
+        UnlockTracker.unlockCard(Metabolism.ID);
+        UnlockTracker.unlockCard(CustomWhiteNoise.ID);
+        UnlockTracker.unlockCard(ClearMind.ID);
+        UnlockTracker.unlockCard(FrostAura.ID);
+        UnlockTracker.unlockCard(DarkAura.ID);
+        UnlockTracker.unlockCard(Hack.ID);
+        UnlockTracker.unlockCard(CustomHelloWorld.ID);
+        UnlockTracker.unlockCard(CustomConsume.ID);
         UnlockTracker.unlockCard(SweepingClaw.ID);
         UnlockTracker.unlockCard(CustomHologram.ID);
         UnlockTracker.unlockCard(CustomForceField.ID);
@@ -109,7 +126,7 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(ClawSnap.ID);
         UnlockTracker.unlockCard(CustomClaw.ID);
         UnlockTracker.unlockCard(FrostBarrage.ID);
-        UnlockTracker.unlockCard(Hack.ID);
+        UnlockTracker.unlockCard(CustomSkim.ID);
         UnlockTracker.unlockCard(RoboticWalls.ID);
         UnlockTracker.unlockCard(Infuse.ID);
         UnlockTracker.unlockCard(IcePalm.ID);
@@ -121,6 +138,14 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(IceBeam.ID);
 
 
+        BaseMod.removeCard("Sunder", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("White Noise", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Rip and Tear", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Steam Power", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Heatsinks", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Reinforced Body", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Hello World", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Consume", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Sweeping Beam", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Hologram", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Force Field", AbstractCard.CardColor.BLUE);
@@ -146,7 +171,7 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.removeCard("Cold Snap", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Gash", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Barrage", AbstractCard.CardColor.BLUE);
-        BaseMod.removeCard("Overclock", AbstractCard.CardColor.BLUE);
+        BaseMod.removeCard("Skim", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Self Repair", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Thunder Strike", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Go for the Eyes", AbstractCard.CardColor.BLUE);

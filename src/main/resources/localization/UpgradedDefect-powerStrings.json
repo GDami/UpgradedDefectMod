@@ -42,5 +42,26 @@
     "DESCRIPTIONS": ["Every time you channel #b1 #yLightning, gain #b",
       " #yBlock."
     ]
+  },
+  "UpgradedDefect:HelloWorld": {
+    "NAME": "Hello World",
+    "DESCRIPTIONS": ["Every orb you channel triggers its passive #b",
+      " time.",
+      " times."
+    ]
+  },
+  "UpgradedDefect:LoseOrbSlotsNextTurn": {
+    "NAME": "Orb slots down",
+    "DESCRIPTIONS": ["At the start of your next turn, lose #b",
+      " #yOrb #yslot.",
+      " #yOrb #yslots."
+    ]
+  },
+  "UpgradedDefect:DarkAura": {
+    "NAME": "Dark Aura",
+    "DESCRIPTIONS": ["Your Dark orbs trigger #b",
+      " more time.",
+      " more times."
+    ]
   }
 }

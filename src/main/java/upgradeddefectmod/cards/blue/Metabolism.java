@@ -8,40 +8,43 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.LockOnPower;
+import com.megacrit.cardcrawl.powers.BiasPower;
+import com.megacrit.cardcrawl.powers.DexterityPower;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import upgradeddefectmod.UpgradedDefect;
 
-public class Hack extends CustomCard {
+public class Metabolism extends CustomCard {
 
-    public static final String ID = "UpgradedDefect:Hack";
+
+    public static final String ID = "UpgradedDefect:Metabolism";
     private static final String IMG_NAME = UpgradedDefect.makeCardPath(ID.split(":")[1]);
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = cardStrings.NAME;
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 1;
+    private static final int COST = 2;
 
-    public Hack() {
-        super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.SKILL, CardColor.BLUE, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        this.baseMagicNumber = 99;
-        this.magicNumber = baseMagicNumber;
-        this.exhaust = true;
+    public Metabolism() {
+        super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.POWER, CardColor.BLUE, CardRarity.UNCOMMON, CardTarget.NONE);
+        this.baseMagicNumber = 2;
+        this.magicNumber = this.baseMagicNumber;
+    }
+
+    public AbstractCard makeCopy() {
+        return new Metabolism();
     }
 
     @Override
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeBaseCost(0);
+            this.upgradeMagicNumber(1);
         }
-    }
-
-    public AbstractCard makeCopy() {
-        return new Hack();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new LockOnPower(m, this.magicNumber), this.magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, this.magicNumber)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, this.magicNumber)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new BiasPower(p, 2)));
     }
-
 }

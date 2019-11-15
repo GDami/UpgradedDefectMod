@@ -12,6 +12,7 @@ public class LoseFocusPower extends UpgradedDefectPower {
 
     public LoseFocusPower(AbstractCreature owner, int amount) {
         super(POWER_ID, owner, amount);
+        this.type = PowerType.DEBUFF;
     }
 
     public void stackPower(int stackAmount) {
@@ -19,9 +20,10 @@ public class LoseFocusPower extends UpgradedDefectPower {
         this.amount += stackAmount;
     }
 
-    public void atEndOfRound() {
+    @Override
+    public void atStartOfTurnPostDraw() {
         this.flash();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new FocusPower(this.owner, -this.amount), -this.amount));
-        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, "UpgradedDefect:LoseFocus"));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
     }
 }

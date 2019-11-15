@@ -4,6 +4,7 @@ import com.badlogic.gdx.graphics.Texture;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import com.megacrit.cardcrawl.orbs.Dark;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import upgradeddefectmod.UpgradedDefect;
 
@@ -24,5 +25,7 @@ public class UpgradedDefectPower extends AbstractPower {
     }
 
     public void afterMonstersTurn() {}
+
+    public void onDarkTrigger(Dark o) {}
 
 }
