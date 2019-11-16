@@ -1,0 +1,19 @@
+{
+  "Stalactite": {
+    "NAME": "Stalactite",
+    "FLAVOR": "Ce surin glacé n'est pas prêt de fondre.",
+    "DESCRIPTIONS": ["Chaque fois que vous jouez #b",
+      " #yAttaques en un tour, Canalisez #b1 Orbe Glaciaire."
+    ]
+  },
+  "Kaleidoscope": {
+    "NAME": "Kaléidoscope",
+    "FLAVOR": "Un étrange outil qui vous rappelle votre jeunesse.",
+    "DESCRIPTIONS": ["Toutes les #b15 #yCompétences jouées, Canalisez #b1 Orbe #yKéraunique, #b1 Orbe #yGlaciaire et #b1 Orbe #yObscur."]
+  },
+  "Battery": {
+    "NAME": "Pile rechargeable",
+    "FLAVOR": "Ce vestige d'un temps passé servait à alimenter toutes sortes d'artefacts.",
+    "DESCRIPTIONS": ["Tous les #b10 Orbes #yKérauniques Canalisés, gagnez #b1 de #yConcentration."]
+  }
+}

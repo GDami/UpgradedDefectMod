@@ -9,6 +9,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.Keyword;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -209,9 +210,13 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
 
     @Override
     public void receiveEditStrings() {
-        String cardStrings = "localization/UpgradedDefect-cardStrings.json";
-        String powerStrings = "localization/UpgradedDefect-powerStrings.json";
-        String relicStrings = "localization/UpgradedDefect-relicStrings.json";
+
+        String language = "eng";
+        if (Settings.language == Settings.GameLanguage.FRA) language = "fra";
+
+        String cardStrings = "localization/" + language + "/UpgradedDefect-cardStrings.json";
+        String powerStrings = "localization/" + language + "/UpgradedDefect-powerStrings.json";
+        String relicStrings = "localization/" + language + "/UpgradedDefect-relicStrings.json";
 
         BaseMod.loadCustomStringsFile(CardStrings.class, cardStrings);
         BaseMod.loadCustomStringsFile(PowerStrings.class, powerStrings);
@@ -230,9 +235,12 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
     @Override
     public void receiveEditKeywords() {
 
+        String language = "eng";
+        if (Settings.language == Settings.GameLanguage.FRA) language = "fra";
+
         Type typeToken = new TypeToken<Map<String, Keyword>>(){}.getType();
         Gson gson = new Gson();
-        String strings = loadJson("localization/UpgradedDefect-keywordStrings.json");
+        String strings = loadJson("localization/" + language + "/UpgradedDefect-keywordStrings.json");
         Map<String,Keyword> keywords = gson.fromJson(strings, typeToken);
         for (Keyword kw : keywords.values()) {
             BaseMod.addKeyword(kw.NAMES, kw.DESCRIPTION);

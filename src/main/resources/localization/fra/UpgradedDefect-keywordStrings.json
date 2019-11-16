@@ -1,0 +1,10 @@
+{
+  "HOST": {
+    "NAMES": ["hôte"],
+    "DESCRIPTION": "Dévoré par un parasite, l'hôte perd des PV chaque tour."
+  },
+  "CLAW": {
+    "NAMES": ["griffe"],
+    "DESCRIPTION": "Augmente de 1 les dégats de TOUTES les Griffes ce combat."
+  }
+}

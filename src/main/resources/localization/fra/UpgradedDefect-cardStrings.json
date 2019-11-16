@@ -1,0 +1,188 @@
+{
+  "UpgradedDefect:IceBeam": {
+    "NAME": "Rayon glacé",
+    "DESCRIPTION": "Infligez !D! dégat(s). NL Canalisez !M! Orbes Glaciaires."
+  },
+  "UpgradedDefect:ShockingTouch": {
+    "NAME": "Toucher paralysant",
+    "DESCRIPTION": "Infligez !D! dégat(s) à TOUS les ennemis. NL Utilisez la capacité passive de tous vos Orbes Kérauniques."
+  },
+  "UpgradedDefect:Shelter": {
+    "NAME": "Abri",
+    "DESCRIPTION": "Gagnez 1 emplacement d'Orbe. NL Canalisez !M! Orbes Glaciaires. NL Épuisement."
+  },
+  "UpgradedDefect:Parasite": {
+    "NAME": "Parasite",
+    "DESCRIPTION": "Appliquez !M! Hôte."
+  },
+  "UpgradedDefect:Accelerate": {
+    "NAME": "Accélération",
+    "DESCRIPTION": "Piochez !M! cartes. NL Perdez 1 de Concentration. NL Épuisement."
+  },
+  "UpgradedDefect:Flux": {
+    "NAME": "Flux",
+    "DESCRIPTION": "Piochez une carte. NL Gagnez !M! d'Armure pour chaque Orbe Kéraunique Canalisé."
+  },
+  "UpgradedDefect:IcePalm": {
+    "NAME": "Paume-Givre",
+    "DESCRIPTION": "Infligez !D! dégat(s). NL Si l'ennemi oompte attaquer, Canalisez !M! Orbe Glaciaire."
+  },
+  "UpgradedDefect:Infuse": {
+    "NAME": "Insuffler",
+    "DESCRIPTION": "Gagnez !M! de Force. NL Perdez 1 de Concentration et 1 emplacement d'Orbe. NL Épuisement"
+  },
+  "UpgradedDefect:RoboticWalls": {
+    "NAME": "Murs robotisés",
+    "DESCRIPTION": "Chaque fois que vous Canalisez 1 Orbe Glaciaire, gagnez !M! d'Armure plaquée."
+  },
+  "UpgradedDefect:Skim": {
+    "NAME": "Parcourir",
+    "DESCRIPTION": "Piochez !M! cartes. NL Au prochain tour, piochez 1 carte en moins."
+  },
+  "UpgradedDefect:FrostBarrage": {
+    "NAME": "Déluge glacial",
+    "DESCRIPTION": "Infligez !D! dégat(s) pour chaque Orbe Glaciaire Canalisé."
+  },
+  "UpgradedDefect:Claw": {
+    "NAME": "Griffe",
+    "DESCRIPTION": "Infligez !D! dégat(s) deux fois. NL Griffe."
+  },
+  "UpgradedDefect:ClawSnap": {
+    "NAME": "Griffe boréale",
+    "DESCRIPTION": "Infligez !D! dégat(s). Canalisez !M! Orbe Glaciaire. NL Griffe."
+  },
+  "UpgradedDefect:Clawbound": {
+    "NAME": "Bond-Griffe",
+    "DESCRIPTION": "Infligez !D! dégat(s). NL Placez la prochaine carte que vous jouez ce tour au sommet de votre pioche. NL Griffe.",
+    "UPGRADE_DESCRIPTION": "Infligez !D! dégat(s). NL Placez la prochaine carte que vous jouez ce tour au sommet de votre pioche. NL Double Griffe."
+  },
+  "UpgradedDefect:Stack": {
+    "NAME": "Pile",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL L'Armure de cette carte est augmentée de !M! ce combat. NL Griffe."
+  },
+  "UpgradedDefect:ChargeBattery": {
+    "NAME": "Recharger les batteries",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Canalisez !M! Orbe Kéraunique."
+  },
+  "UpgradedDefect:BeamCell": {
+    "NAME": "Rayon cellulaire",
+    "DESCRIPTION": "Infligez !D! dégat(s). NL Appliquez !M! de Ciblage."
+  },
+  "UpgradedDefect:LightningAura": {
+    "NAME": "Aura électrique",
+    "DESCRIPTION": "Canalisez !M! Orbes Kérauniques. NL Gagnez !B! d'Armure pour chaque Orbe Kéraunique Canalisé."
+  },
+  "UpgradedDefect:Glacier": {
+    "NAME": "Glacier",
+    "DESCRIPTION": "Gagnez !B! d'Armure. NL Canalisez 1 Orbe Glaciaire."
+  },
+  "UpgradedDefect:Install": {
+    "NAME": "Installation",
+    "DESCRIPTION": "Canalisez 2 Orbes Glaciaires. NL Utilisez la capacité passive de tous vos Orbes Glaciaires. NL Piochez !M! carte.",
+    "UPGRADE_DESCRIPTION": "Canalisez 2 Orbes Glaciaires. NL Utilisez la capacité passive de tous vos Orbes Glaciaires. NL Piochez !M! cartes."
+  },
+  "UpgradedDefect:ClawLightning": {
+    "NAME": "Foudre en griffe",
+    "DESCRIPTION": "Infligez !D! dégat(s). Canalisez !M! Orbe Kéraunique. NL Griffe."
+  },
+  "UpgradedDefect:Chaos": {
+    "NAME": "Chaos",
+    "DESCRIPTION": "Au début de votre tour, Canalisez !M! Orbe aléatoire.",
+    "UPGRADE_DESCRIPTION": "Au début de votre tour, Canalisez !M! Orbes aléatoires."
+  },
+  "UpgradedDefect:Chill": {
+    "NAME": "Frisson",
+    "DESCRIPTION": "Canalisez !M! Orbe Glaciaire. NL Piochez 1 carte pour chaque ennemi dans ce combat. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Inné. Canalisez !M! Orbe Glaciaire. NL Piochez 1 carte pour chaque ennemi dans ce combat. NL Épuisement."
+  },
+  "UpgradedDefect:Discharge": {
+    "NAME": "Décharge",
+    "DESCRIPTION": "Canalisez 1 Orbe Kéraunique. NL Utilisez la capacité passive de tous vos Orbes Kérauniques.",
+    "UPGRADE_DESCRIPTION": "Appliquez !M! de Faiblesse. Canalisez 1 Orbe Kéraunique. NL Utilisez la capacité passive de tous vos Orbes Kérauniques."
+  },
+  "UpgradedDefect:MachineLearning": {
+    "NAME": "Machine Learning",
+    "DESCRIPTION": "Inné. NL Chaque fois que vous perdez des PV, récupérez !M! PV à la fin du combat."
+  },
+  "UpgradedDefect:Clawrd": {
+    "NAME": "Seigneur Griff",
+    "DESCRIPTION": "Infligez !D! dégat(s) à un ennemi aléatoire !M! fois. NL Griffe."
+  },
+  "UpgradedDefect:ClawCounter": {
+    "NAME": "Contre-griffe",
+    "DESCRIPTION": "Infligez !D! dégat(s). NL Si l'ennemi compte attaquer, appliquez !M! de Faiblesse. NL Griffe."
+  },
+  "UpgradedDefect:CleanUp": {
+    "NAME": "CCleaner",
+    "DESCRIPTION": "Au début de votre tour, perdez !M! debuff aléatoire.",
+    "UPGRADE_DESCRIPTION": "Inné. Au début de votre tour, perdez !M! debuff aléatoire."
+  },
+  "UpgradedDefect:Reprogram": {
+    "NAME": "Reprogrammation",
+    "DESCRIPTION": "Votre Force, Dextérité et Concentration sont remises à zéro. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Votre Force, Dextérité et Concentration sont remises à zéro."
+  },
+  "UpgradedDefect:Turbo": {
+    "NAME": "TURBO",
+    "DESCRIPTION": "Gagnez !M! de Concentration. NL Au prochain tour, perdez !M! de Concentration."
+  },
+  "UpgradedDefect:DarkWave": {
+    "NAME": "Dark Wave",
+    "DESCRIPTION": "Remplacez TOUS vos Orbes par des Orbes Obscurs. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Remplacez TOUS vos Orbes par des Orbes Obscurs. Utilisez la capacité passive de tous vos Orbes Obscurs. NL Épuisement."
+  },
+  "UpgradedDefect:Hologram": {
+    "NAME": "Hologramme",
+    "DESCRIPTION": "Infligez !D! dégat(s). NL Au prochain tour, gagnez !B! d'Armure.",
+    "UPGRADE_DESCRIPTION": "Infligez !D! dégat(s). NL Au prochain tour, gagnez !B! d'Armure et piochez une carte."
+  },
+  "UpgradedDefect:SweepingClaw": {
+    "NAME": "Griffe balayante",
+    "DESCRIPTION": "Infligez !D! dégats à TOUS les ennemis. NL Piochez 1 carte. NL Griffe."
+  },
+  "UpgradedDefect:AutoShields": {
+    "NAME": "Boucliers automatiques",
+    "DESCRIPTION": "Quand vous Canalisez un Orbe Kéraunique, gagnez !M! d'Armure."
+  },
+  "UpgradedDefect:ForceField": {
+    "NAME": "Champ de force",
+    "DESCRIPTION": "Appliquez !M! de Ciblage à TOUS les ennemis. NL Canalisez !UpgradedDefect:SN! Orbes Kérauniques. NL Épuisement."
+  },
+  "UpgradedDefect:HelloWorld": {
+    "NAME": "Hello World",
+    "DESCRIPTION": "Éthérée. NL Quand vous Canalisez un Orbe, utilisez sa capacité passive.",
+    "UPGRADE_DESCRIPTION": "Quand vous Canalisez un Orbe, utilisez sa capacité passive."
+  },
+  "UpgradedDefect:Hack": {
+    "NAME": "Piratage",
+    "DESCRIPTION": "Appliquez !M! de Ciblage. NL Épuisement."
+  },
+  "UpgradedDefect:FrostAura": {
+    "NAME": "Aura givrée",
+    "DESCRIPTION": "Placez un Orbe Glaciaire dans tous vos emplacements vides. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Inné. Placez un Orbe Glaciaire dans tous vos emplacements vides. NL Épuisement."
+  },
+  "UpgradedDefect:Consume": {
+    "NAME": "Consumer",
+    "DESCRIPTION": "Gagnez !M! de Concentration et perdez un emplacement d'Orbe. NL Au prochain tour, perdez un emplacement d'Orbe."
+  },
+  "UpgradedDefect:DarkAura": {
+    "NAME": "Aura lugubre",
+    "DESCRIPTION": "Vos Orbes Obscurs activent leur capacité passive une fois supplémentaire.",
+    "UPGRADE_DESCRIPTION": "Vos Orbes Obscurs activent leur capacité passive une fois supplémentaire. NL Canalisez 1 Orbe Obscur."
+  },
+  "UpgradedDefect:ClearMind": {
+    "NAME": "Lucidité",
+    "DESCRIPTION": "Si l'ennemi compte attaquer, gagnez !M! de Concentration. NL Épuisement",
+    "UPGRADE_DESCRIPTION": "Si l'ennemi compte attaquer, gagnez !M! de Concentration."
+  },
+  "UpgradedDefect:WhiteNoise": {
+    "NAME": "Bruit blanc",
+    "DESCRIPTION": "Ajoutez un Pouvoir aléatoire à votre main. NL Il coûte 0 ce tour. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Ajoutez un Pouvoir aléatoire à votre main. NL Il coûte 0 ce tour."
+  },
+  "UpgradedDefect:Metabolism": {
+    "NAME": "Métabolisme",
+    "DESCRIPTION": "Gagnez !M! de Force et !M! de Dextérité. NL Au début de chaque tour, perdez 2 de Concentration."
+  }
+}

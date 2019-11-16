@@ -1,0 +1,67 @@
+{
+  "UpgradedDefect:Parasite": {
+    "NAME": "Hôte",
+    "DESCRIPTIONS": ["Au début de son tour, perd #b",
+      " #yPV."
+    ]
+  },
+  "UpgradedDefect:RoboticWalls": {
+    "NAME": "Murs robotisés",
+    "DESCRIPTIONS": ["Pour chaque #yOrbe #yGlaciaire Canalisé, gagnez #b",
+      " d'#yArmure #Plaquée."
+    ]
+  },
+  "UpgradedDefect:Chaos": {
+    "NAME": "Chaos",
+    "DESCRIPTIONS": ["Au début de votre tour, Canalisez #b",
+      " Orbe aléatoire.",
+      " Orbes aléatoires."
+    ]
+  },
+  "UpgradedDefect:MachineLearning": {
+    "NAME": "MachineLearning",
+    "DESCRIPTIONS": ["Every HP loss grants you #b",
+      " healing at the end of combat."
+    ]
+  },
+  "UpgradedDefect:CleanUp": {
+    "NAME": "CClean",
+    "DESCRIPTIONS": ["At the start of your turn, remove #b",
+      " random #ydebuff.",
+      " random #ydebuffs"
+    ]
+  },
+  "UpgradedDefect:LoseFocus": {
+    "NAME": "Focus Down",
+    "DESCRIPTIONS": ["At the start of your next turn, lose #b",
+      " #yFocus."
+    ]
+  },
+  "UpgradedDefect:AutoShields": {
+    "NAME": "Auto-Shields",
+    "DESCRIPTIONS": ["Every time you channel #b1 #yLightning, gain #b",
+      " #yBlock."
+    ]
+  },
+  "UpgradedDefect:HelloWorld": {
+    "NAME": "Hello World",
+    "DESCRIPTIONS": ["Every orb you channel triggers its passive #b",
+      " time.",
+      " times."
+    ]
+  },
+  "UpgradedDefect:LoseOrbSlotsNextTurn": {
+    "NAME": "Orb slots down",
+    "DESCRIPTIONS": ["At the start of your next turn, lose #b",
+      " #yOrb #yslot.",
+      " #yOrb #yslots."
+    ]
+  },
+  "UpgradedDefect:DarkAura": {
+    "NAME": "Dark Aura",
+    "DESCRIPTIONS": ["Your Dark orbs trigger #b",
+      " more time.",
+      " more times."
+    ]
+  }
+}
