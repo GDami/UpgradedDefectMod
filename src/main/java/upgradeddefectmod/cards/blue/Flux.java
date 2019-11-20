@@ -18,11 +18,11 @@ public class Flux extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = cardStrings.NAME;
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final int COST = 0;
+    private static final int COST = 1;
 
     public Flux() {
         super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.SKILL, CardColor.BLUE, CardRarity.COMMON, CardTarget.SELF);
-        this.baseMagicNumber = 1;
+        this.baseMagicNumber = 3;
         this.magicNumber = baseMagicNumber;
     }
 

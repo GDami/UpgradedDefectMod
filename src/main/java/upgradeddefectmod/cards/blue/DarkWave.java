@@ -50,9 +50,7 @@ public class DarkWave extends CustomCard {
             for (int i=0 ; i < p.orbs.size() ; i++) {
                 AbstractOrb o = p.orbs.get(i);
                 if (!(o instanceof EmptyOrbSlot) && !(o instanceof Dark)) {
-                    UpgradedDefect.logger.info(i);
                     AbstractDungeon.actionManager.addToBottom(new ReplaceOrbAction(i, new Dark()));
-                    UpgradedDefect.logger.info("tt " + i);
                 }
             }
             if (this.upgraded) {

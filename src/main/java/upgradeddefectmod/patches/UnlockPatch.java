@@ -5,11 +5,7 @@ import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.unlock.AbstractUnlock;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
-import com.megacrit.cardcrawl.unlock.cards.DefectCards.EchoFormUnlock;
-import com.megacrit.cardcrawl.unlock.cards.DefectCards.SunderUnlock;
-import com.megacrit.cardcrawl.unlock.cards.DefectCards.TurboUnlock;
-import com.megacrit.cardcrawl.unlock.cards.DefectCards.UndoUnlock;
-import javassist.CtBehavior;
+import com.megacrit.cardcrawl.unlock.cards.DefectCards.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -32,6 +28,10 @@ public class UnlockPatch {
                     patchBundle.add(new EchoFormUnlock());
                     return SpireReturn.Return(patchBundle);
                 case 1:
+                    return SpireReturn.Return(patchBundle);
+                case 2 :
+                    patchBundle.add(new HyperbeamUnlock());
+                    patchBundle.add(new NovaUnlock());
                     return SpireReturn.Return(patchBundle);
             }
         }

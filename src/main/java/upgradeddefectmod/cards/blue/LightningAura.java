@@ -1,6 +1,7 @@
 package upgradeddefectmod.cards.blue;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -20,6 +21,7 @@ public class LightningAura extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     private static final String NAME = cardStrings.NAME;
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
+    private static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int COST = 2;
 
     public LightningAura() {
@@ -37,7 +39,8 @@ public class LightningAura extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             this.upgradeName();
-            this.upgradeMagicNumber(1);
+            rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 
@@ -47,5 +50,8 @@ public class LightningAura extends CustomCard {
             AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Lightning()));
         }
         AbstractDungeon.actionManager.addToBottom(new CustomFluxAction(p, this.block));
+        if (upgraded) {
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, 1));
+        }
     }
 }

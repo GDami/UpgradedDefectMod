@@ -1,6 +1,8 @@
 package upgradeddefectmod.cards.blue;
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,6 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.orbs.EmptyOrbSlot;
 import com.megacrit.cardcrawl.orbs.Frost;
 import upgradeddefectmod.UpgradedDefect;
+import upgradeddefectmod.powers.FrostAuraPower;
 
 public class FrostAura extends CustomCard {
 
@@ -25,7 +28,8 @@ public class FrostAura extends CustomCard {
 
     public FrostAura() {
         super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.SKILL, AbstractCard.CardColor.BLUE, AbstractCard.CardRarity.COMMON, CardTarget.NONE);
-        this.exhaust = true;
+        this.baseMagicNumber = 1;
+        this.magicNumber = baseMagicNumber;
     }
 
     public AbstractCard makeCopy() {
@@ -35,21 +39,16 @@ public class FrostAura extends CustomCard {
     @Override
     public void upgrade() {
         if (!this.upgraded) {
-            this.isInnate = true;
             this.upgradeName();
-            this.rawDescription = UPGRADE_DESCRIPTION;
-            this.initializeDescription();
+            AlwaysRetainField.alwaysRetain.set(this, true);
+            rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
+
         }
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (!p.orbs.isEmpty()) {
-            for (int i=0 ; i < p.orbs.size() ; i++) {
-                if (p.orbs.get(i) instanceof EmptyOrbSlot) {
-                    AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Frost()));
-                }
-            }
-        }
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FrostAuraPower(p, magicNumber), magicNumber));
     }
 }

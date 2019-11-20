@@ -8,6 +8,7 @@
   "UpgradedDefect:RoboticWalls": {
     "NAME": "Murs robotisés",
     "DESCRIPTIONS": ["Pour chaque #yOrbe #yGlaciaire Canalisé, gagnez #b",
+      " d'#yArmure #Plaquée. Pour chaque #yOrbe #yKéraunique Canalisé, perdez #b",
       " d'#yArmure #Plaquée."
     ]
   },
@@ -19,49 +20,56 @@
     ]
   },
   "UpgradedDefect:MachineLearning": {
-    "NAME": "MachineLearning",
-    "DESCRIPTIONS": ["Every HP loss grants you #b",
-      " healing at the end of combat."
+    "NAME": "Machine Learning",
+    "DESCRIPTIONS": ["Chaque fois que vous perdez des PV, regagnez #b",
+      " PV à la fin du combat."
     ]
   },
   "UpgradedDefect:CleanUp": {
     "NAME": "CClean",
-    "DESCRIPTIONS": ["At the start of your turn, remove #b",
-      " random #ydebuff.",
-      " random #ydebuffs"
+    "DESCRIPTIONS": ["Au début de votre tour, perdez #b",
+      " #ydebuff aléatoire.",
+      " #ydebuffs aléatoires."
     ]
   },
   "UpgradedDefect:LoseFocus": {
-    "NAME": "Focus Down",
-    "DESCRIPTIONS": ["At the start of your next turn, lose #b",
-      " #yFocus."
+    "NAME": "Perte de Concentration",
+    "DESCRIPTIONS": ["Au début de votre prochain tour, perdez #b",
+      " de #yConcentration."
     ]
   },
   "UpgradedDefect:AutoShields": {
-    "NAME": "Auto-Shields",
-    "DESCRIPTIONS": ["Every time you channel #b1 #yLightning, gain #b",
-      " #yBlock."
+    "NAME": "Boucliers automatiques",
+    "DESCRIPTIONS": ["Chaque #yOrbe #yKéraunique Canalisé vous octroie #b",
+      " d'#yArmure."
     ]
   },
   "UpgradedDefect:HelloWorld": {
     "NAME": "Hello World",
-    "DESCRIPTIONS": ["Every orb you channel triggers its passive #b",
-      " time.",
-      " times."
+    "DESCRIPTIONS": ["Chaque Orbe que vous canaliser déclenche sa capacité passive #b",
+      " fois.",
+      " fois."
     ]
   },
   "UpgradedDefect:LoseOrbSlotsNextTurn": {
-    "NAME": "Orb slots down",
-    "DESCRIPTIONS": ["At the start of your next turn, lose #b",
-      " #yOrb #yslot.",
-      " #yOrb #yslots."
+    "NAME": "Perte d'emplacements d'Orbe",
+    "DESCRIPTIONS": ["Au début de votre prochain tour, perdez #b",
+      " #yemplacement d'#yOrbe.",
+      " #yemplacements d'#yOrbe."
     ]
   },
   "UpgradedDefect:DarkAura": {
     "NAME": "Dark Aura",
-    "DESCRIPTIONS": ["Your Dark orbs trigger #b",
-      " more time.",
-      " more times."
+    "DESCRIPTIONS": ["Vos Orbes Obscurs activent leur capacité passive #b",
+      " fois de plus.",
+      " fois de plus."
+    ]
+  },
+  "UpgradedDefect:FrostAura": {
+    "NAME": "Aura givrée",
+    "DESCRIPTIONS": ["Lorsque vous êtes attaqué, Canalisez #b",
+      " #yOrbe #yGlaciaire",
+      " #yOrbes #yGlaciaires."
     ]
   }
 }

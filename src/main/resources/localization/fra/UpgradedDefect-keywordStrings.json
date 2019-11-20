@@ -6,5 +6,9 @@
   "CLAW": {
     "NAMES": ["griffe"],
     "DESCRIPTION": "Augmente de 1 les dégats de TOUTES les Griffes ce combat."
+  },
+  "RETAIN": {
+    "NAMES": ["retenue"],
+    "DESCRIPTION": "N'est pas défaussée à la fin du tour."
   }
 }

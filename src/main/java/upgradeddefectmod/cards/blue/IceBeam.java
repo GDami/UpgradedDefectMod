@@ -22,7 +22,7 @@ public class IceBeam extends CustomCard {
     private static final String NAME = cardStrings.NAME;
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final int COST = 2;
-    private static final int ATTACK_DMG = 15;
+    private static final int ATTACK_DMG = 14;
 
     public IceBeam() {
         super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.ATTACK, CardColor.BLUE, CardRarity.UNCOMMON, CardTarget.ENEMY);
@@ -41,7 +41,7 @@ public class IceBeam extends CustomCard {
     public void upgrade() {
         if (!this.upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            upgradeDamage(4);
         }
     }
 

@@ -1,7 +1,6 @@
 package upgradeddefectmod;
 
 import basemod.BaseMod;
-import basemod.devcommands.clear.Clear;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -60,14 +59,14 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new Infuse());
         BaseMod.addCard(new RoboticWalls());
         BaseMod.addCard(new CustomSkim());
-        BaseMod.addCard(new FrostBarrage());
+        //BaseMod.addCard(new FrostBarrage());
         BaseMod.addCard(new CustomClaw());
         BaseMod.addCard(new ClawSnap());
         BaseMod.addCard(new Clawbound());
         BaseMod.addCard(new CustomStack());
         BaseMod.addCard(new CustomBattery());
         BaseMod.addCard(new CustomBeamCell());
-        BaseMod.addCard(new CustomGlacier());
+        BaseMod.addCard(new GlacierSlam());
         BaseMod.addCard(new LightningAura());
         BaseMod.addCard(new Install());
         BaseMod.addCard(new ClawLightning());
@@ -93,7 +92,9 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.addCard(new ClearMind());
         BaseMod.addCard(new CustomWhiteNoise());
         BaseMod.addCard(new Metabolism());
+        BaseMod.addCard(new CustomRecycle());
 
+        UnlockTracker.unlockCard(CustomRecycle.ID);
         UnlockTracker.unlockCard(Metabolism.ID);
         UnlockTracker.unlockCard(CustomWhiteNoise.ID);
         UnlockTracker.unlockCard(ClearMind.ID);
@@ -119,14 +120,14 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(ClawLightning.ID);
         UnlockTracker.unlockCard(Install.ID);
         UnlockTracker.unlockCard(LightningAura.ID);
-        UnlockTracker.unlockCard(CustomGlacier.ID);
+        UnlockTracker.unlockCard(GlacierSlam.ID);
         UnlockTracker.unlockCard(CustomBeamCell.ID);
         UnlockTracker.unlockCard(CustomBattery.ID);
         UnlockTracker.unlockCard(CustomStack.ID);
         UnlockTracker.unlockCard(Clawbound.ID);
         UnlockTracker.unlockCard(ClawSnap.ID);
         UnlockTracker.unlockCard(CustomClaw.ID);
-        UnlockTracker.unlockCard(FrostBarrage.ID);
+        //UnlockTracker.unlockCard(FrostBarrage.ID);
         UnlockTracker.unlockCard(CustomSkim.ID);
         UnlockTracker.unlockCard(RoboticWalls.ID);
         UnlockTracker.unlockCard(Infuse.ID);
@@ -139,6 +140,7 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         UnlockTracker.unlockCard(IceBeam.ID);
 
 
+        BaseMod.removeCard("Recycle", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Sunder", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("White Noise", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Rip and Tear", AbstractCard.CardColor.BLUE);
@@ -171,7 +173,7 @@ public class UpgradedDefect implements EditKeywordsSubscriber, EditRelicsSubscri
         BaseMod.removeCard("Rebound", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Cold Snap", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Gash", AbstractCard.CardColor.BLUE);
-        BaseMod.removeCard("Barrage", AbstractCard.CardColor.BLUE);
+        //BaseMod.removeCard("Barrage", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Skim", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Self Repair", AbstractCard.CardColor.BLUE);
         BaseMod.removeCard("Thunder Strike", AbstractCard.CardColor.BLUE);

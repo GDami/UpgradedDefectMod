@@ -8,8 +8,9 @@
   "UpgradedDefect:RoboticWalls": {
     "NAME": "Robotic Walls",
     "DESCRIPTIONS": ["Every time you channel #b1 #yFrost, gain #b",
+      " #yPlated #yArmor. Every time you channel #b1 #yLightning, lose #b",
       " #yPlated #yArmor."
-    ]
+  ]
   },
   "UpgradedDefect:Chaos": {
     "NAME": "Chaos",
@@ -62,6 +63,13 @@
     "DESCRIPTIONS": ["Your Dark orbs trigger #b",
       " more time.",
       " more times."
+    ]
+  },
+  "UpgradedDefect:FrostAura": {
+    "NAME": "Frost Aura",
+    "DESCRIPTIONS": ["When attacked, channel #b",
+      " #yFrost.",
+      " #yFrost."
     ]
   }
 }
