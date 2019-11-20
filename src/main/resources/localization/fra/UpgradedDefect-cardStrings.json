@@ -71,7 +71,8 @@
   },
   "UpgradedDefect:LightningAura": {
     "NAME": "Aura électrique",
-    "DESCRIPTION": "Canalisez !M! Orbes Kérauniques. NL Gagnez !B! d'Armure pour chaque Orbe Kéraunique Canalisé."
+    "DESCRIPTION": "Canalisez !M! Orbes Kérauniques. NL Gagnez !B! d'Armure pour chaque Orbe Kéraunique Canalisé.",
+    "UPGRADE_DESCRIPTION": "Canalisez !M! Orbes Kérauniques. NL Gagnez !B! d'Armure pour chaque Orbe Kéraunique Canalisé. NL Piochez 1 carte."
   },
   "UpgradedDefect:GlacierSlam": {
     "NAME": "Plaquage glacial",

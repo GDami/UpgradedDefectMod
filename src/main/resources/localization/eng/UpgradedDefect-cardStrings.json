@@ -72,7 +72,7 @@
   "UpgradedDefect:LightningAura": {
     "NAME": "Lightning Aura",
     "DESCRIPTION": "Channel !M! Lightning. NL Gain !B! Block for every Lightning orb you have.",
-    "UPGRADED_DESCRIPTION": "Channel !M! Lightning. NL Gain !B! Block for every Lightning orb you have. NL Draw 1 card."
+    "UPGRADE_DESCRIPTION": "Channel !M! Lightning. NL Gain !B! Block for every Lightning orb you have. NL Draw 1 card."
   },
   "UpgradedDefect:GlacierSlam": {
     "NAME": "Glacier Slam",

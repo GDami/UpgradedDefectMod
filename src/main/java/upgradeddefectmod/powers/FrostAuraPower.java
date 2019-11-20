@@ -30,7 +30,7 @@ public class FrostAuraPower extends UpgradedDefectPower {
     public int onAttacked(DamageInfo info, int damageAmount) {
         if (info.type == DamageInfo.DamageType.NORMAL) {
             for (int i = 0 ; i < this.amount ; i++) {
-                AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Frost()));
+                AbstractDungeon.actionManager.addToTop(new ChannelAction(new Frost()));
             }
         }
         return damageAmount;

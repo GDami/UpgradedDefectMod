@@ -1,13 +1,16 @@
 package upgradeddefectmod.powers;
 
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.FocusPower;
+import upgradeddefectmod.UpgradedDefect;
 
 public class LoseFocusPower extends UpgradedDefectPower {
 
+    private AbstractGameAction ac;
     private static final String POWER_ID = "UpgradedDefect:LoseFocus";
 
     public LoseFocusPower(AbstractCreature owner, int amount) {
@@ -23,7 +26,16 @@ public class LoseFocusPower extends UpgradedDefectPower {
     @Override
     public void atStartOfTurnPostDraw() {
         this.flash();
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(this.owner, this.owner, new FocusPower(this.owner, -this.amount), -this.amount));
+        ac = new ApplyPowerAction(this.owner, this.owner, new FocusPower(this.owner, -this.amount), -this.amount);
+        AbstractDungeon.actionManager.addToBottom(ac);
+
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, POWER_ID));
+
+    }
+
+    public void onRemove() {
+        if (ac != null) {
+            AbstractDungeon.actionManager.actions.remove(ac);
+        }
     }
 }
