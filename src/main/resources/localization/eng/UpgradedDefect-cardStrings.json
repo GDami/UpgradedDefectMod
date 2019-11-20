@@ -5,7 +5,7 @@
   },
   "UpgradedDefect:ShockingTouch": {
     "NAME": "Shocking Touch",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Trigger the passive ability of all Lightning orbs."
+    "DESCRIPTION": "Deal !D! damage. NL Trigger the passive ability of all Lightning orbs."
   },
   "UpgradedDefect:Shelter": {
     "NAME": "Shelter",
@@ -81,8 +81,8 @@
   },
   "UpgradedDefect:Install": {
     "NAME": "Install",
-    "DESCRIPTION": "Channel 2 Frost. NL Trigger the passive ability of all Frost orbs. NL Draw !M! card.",
-    "UPGRADE_DESCRIPTION": "Channel 2 Frost. NL Trigger the passive ability of all Frost orbs. NL Draw !M! cards."
+    "DESCRIPTION": "Innate. NL Gain 1 Focus. Channel 1 Lightning. Draw !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Gain 1 Focus. Channel 1 Lightning. Draw !M! cards. NL Exhaust."
   },
   "UpgradedDefect:ClawLightning": {
     "NAME": "Claw Lightning",

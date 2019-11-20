@@ -1,6 +1,7 @@
 package upgradeddefectmod.cards.blue;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.defect.ChannelAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -9,9 +10,9 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.orbs.Frost;
+import com.megacrit.cardcrawl.orbs.Lightning;
+import com.megacrit.cardcrawl.powers.FocusPower;
 import upgradeddefectmod.UpgradedDefect;
-import upgradeddefectmod.actions.FrostImpulseAction;
 
 public class Install extends CustomCard {
 
@@ -21,12 +22,14 @@ public class Install extends CustomCard {
     private static final String NAME = cardStrings.NAME;
     private static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final int COST = 2;
+    private static final int COST = 1;
 
     public Install() {
-        super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.SKILL, CardColor.BLUE, CardRarity.COMMON, CardTarget.NONE);
+        super(ID, NAME, IMG_NAME, COST, DESCRIPTION, CardType.SKILL, CardColor.BLUE, CardRarity.RARE, CardTarget.NONE);
         this.baseMagicNumber = 1;
         this.magicNumber = this.baseMagicNumber;
+        this.exhaust = true;
+        this.isInnate = true;
     }
 
     @Override
@@ -45,9 +48,8 @@ public class Install extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Frost()));
-        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Frost()));
-        AbstractDungeon.actionManager.addToBottom(new FrostImpulseAction());
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new FocusPower(p, 1)));
+        AbstractDungeon.actionManager.addToBottom(new ChannelAction(new Lightning()));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
     }
 

@@ -5,7 +5,7 @@
   },
   "UpgradedDefect:ShockingTouch": {
     "NAME": "Toucher paralysant",
-    "DESCRIPTION": "Infligez !D! dégat(s) à TOUS les ennemis. NL Utilisez la capacité passive de tous vos Orbes Kérauniques."
+    "DESCRIPTION": "Infligez !D! dégat(s). NL Utilisez la capacité passive de tous vos Orbes Kérauniques."
   },
   "UpgradedDefect:Shelter": {
     "NAME": "Abri",
@@ -81,8 +81,8 @@
   },
   "UpgradedDefect:Install": {
     "NAME": "Installation",
-    "DESCRIPTION": "Canalisez 2 Orbes Glaciaires. NL Utilisez la capacité passive de tous vos Orbes Glaciaires. NL Piochez !M! carte.",
-    "UPGRADE_DESCRIPTION": "Canalisez 2 Orbes Glaciaires. NL Utilisez la capacité passive de tous vos Orbes Glaciaires. NL Piochez !M! cartes."
+    "DESCRIPTION": "Inné. NL Gagnez 1 de Concentration. Canalisez 1 Orbe Kéraunique. Piochez !M! carte. NL Épuisement.",
+    "UPGRADE_DESCRIPTION": "Inné. NL Gagnez 1 de Concentration. Canalisez 1 Orbe Kéraunique. Piochez !M! cartes. NL Épuisement."
   },
   "UpgradedDefect:ClawLightning": {
     "NAME": "Foudre en griffe",
