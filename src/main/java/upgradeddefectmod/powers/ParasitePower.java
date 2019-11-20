@@ -1,16 +1,19 @@
 package upgradeddefectmod.powers;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
+import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.HealthBarRenderPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.LoseHPAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import upgradeddefectmod.UpgradedDefect;
 
-public class ParasitePower extends UpgradedDefectPower {
+public class ParasitePower extends UpgradedDefectPower implements HealthBarRenderPower {
 
     private static final String POWER_ID = "UpgradedDefect:Parasite";
 
@@ -34,4 +37,13 @@ public class ParasitePower extends UpgradedDefectPower {
     }
 
 
+    @Override
+    public int getHealthBarAmount() {
+        return amount;
+    }
+
+    @Override
+    public Color getColor() {
+        return CardHelper.getColor(85f, 105f, 0f);
+    }
 }
